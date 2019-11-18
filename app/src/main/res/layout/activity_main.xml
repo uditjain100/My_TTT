@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textSize="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player1 -> "
+            android:textAlignment="center"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:id="@+id/pc1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:textSize="35dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player2 -> "
+            android:textAlignment="center"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:id="@+id/pc2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:textSize="35dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/bt00"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt01"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt02"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/bt10"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt11"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt12"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/bt20"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt21"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt22"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Winner -> "
+            android:textSize="35dp"
+            android:textAlignment="viewEnd"
+            />
+
+        <TextView
+            android:id="@+id/win"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="35dp"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
